@@ -12,7 +12,7 @@ est un framework qui vous permet de transformer votre application web en applica
 il est fait dans un cadre simpliste et facile à utiliser pour tout les mondes et même pour ceux qui ne sont pas trop pointu dans la programmation native.
 il ne vous suffit que d'Une minute pour tout arranger et distribuer. il générée des applications léger et flexible car pour sont fonctionnement il nécessite le Navigateur google Chrome installer sur le système et même pour tous vos applications généré par lui.
 
-la plate-forme est une produit de Congo Cloud Computer. https://3c-numeric.com
+la plate-forme est une produit de Congo Cloud Computer. <https://3c-numeric.com>
 
 ## OS supporté
 
@@ -25,7 +25,7 @@ vous devez savoir que la plate-forme est encore en cours de développement. la v
 
 ## QUELQUES PRÉ-REQUIS
 
-Certains fichiers *.ahk doivent être compiler avec le compilateur [AutoHotKey](https://www.autohotkey.com) vers *.exe
+Certains fichiers .ahk doivent être compiler avec le compilateur [AutoHotKey](https://www.autohotkey.com) vers .exe
 
 - Unistall.ahp
 - install.ahk

@@ -14,7 +14,7 @@ il ne vous suffit que d'Une minute pour tout arranger et distribuer. il génér�
 
 la plate-forme est une produit de Congo Cloud Computer. https://3c-numeric.com
 
-## OS supporter
+## OS supporté
 
 Malheureusement deskframe est seulement disponible sur le système d'exploitation Windows seulement.
 nous travaillons pour le rendre disponible sur tout les plate-forme LUNIX & MAC OS.
@@ -22,6 +22,15 @@ nous travaillons pour le rendre disponible sur tout les plate-forme LUNIX & MAC 
 ## IMPORTANT
 
 vous devez savoir que la plate-forme est encore en cours de développement. la version actuelle n'est pas encore stable.
+
+## QUELQUES PRÉ-REQUIS
+
+Certains fichiers *.ahk doivent être compiler avec le compilateur [AutoHotKey](https://www.autohotkey.com) vers *.exe
+
+- Unistall.ahp
+- install.ahk
+- app.ahk
+- Compil2Exe.ahk
 
 ## DIRECTORY
 

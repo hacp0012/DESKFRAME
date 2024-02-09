@@ -1,0 +1,7 @@
+DESK FRAME logs
+
+- To resoleve
+	* after build the uninstaller can't remove all files in installation dir
+
+TODO
+- implemante winMax, winMin, winRestore, winClose

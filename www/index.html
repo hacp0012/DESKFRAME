@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>DESKFRAME</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="./logo/deskframe.png" rel="icon" />
+    <link href="./logo/deskframe.png" rel="apple-touch-icon" />
+
+    <!-- deskframce css -->
+    <link rel="stylesheet" type="text/css" href="./assets/deskframe.css" />
+
+    <!-- deskframe script -->
+    <script src="./assets/deskframe.js"></script>
+  </head>
+
+  <style>
+    body {
+      margin: auto;
+      padding: auto;
+      background: linear-gradient(0deg, #0e3d3d 6%, #0e2738 100%);
+      height: 100vh;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    .centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 89.6vh;
+    }
+
+    #titlebar {
+      width: 100%;
+      height: 45px;
+      background-color: #e9f1f759;
+    }
+
+    .h1 {
+      font-size: xx-large;
+      font-weight: lighter;
+      color: #73d6da;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      background-color: #293841;
+      padding: 5px;
+      cursor: pointer;
+      color: #73d6da;
+    }
+
+    button:hover {
+      background-color: #73d6da;
+      color: #0e2738;
+    }
+
+    .ccc {
+      font-family: "Lucida Sans";
+      color: rgb(198, 226, 250);
+    }
+  </style>
+
+  <body>
+    <div class="centered">
+      <img src="./logo/deskframe.png" alt="logo" width="35%" />
+      <div class="h1">DESKFRAME v1.0</div>
+      <div class="ccc">Congo Cloud Computer : 3c-numeric.com</div>
+      <br />
+      <div>
+        <button type="button" onclick="desk.frame.Maximize()">Max</button>
+        <button type="button" onclick="desk.frame.Minimize()">Min</button>
+        <button type="button" onclick="desk.frame.Close()">Close</button>
+        <button type="button" onclick="desk.frame.Restore()">Restore</button>
+        <button type="button" onclick="desk.frame.Toggle()">Toggle</button>
+        <br />
+        <br />
+        <button type="button" onclick="desk.frame.HideTitlebar()">
+          hide title bar
+        </button>
+        <button type="button" onclick="desk.frame.ShowTitlebar()">
+          show title bar
+        </button>
+        <button type="button" onclick="desk.frame.ShowTitlebarToggle()">
+          show title bar toggle
+        </button>
+        <button type="button" class="move" title="Double click and move">
+          move window
+        </button>
+        <br />
+        <br />
+        <button
+          type="button"
+          onclick="desk.system.TrayTip('test', 'petit message')"
+          title="affiche un bulle"
+        >
+          bulle
+        </button>
+        <button
+          type="button"
+          onclick="runCmd()"
+          title="execute une commande DOS"
+        >
+          test cmd
+        </button>
+        <button
+          type="button"
+          onclick="desk.system.Shutdown(0)"
+          title="Deconnexion"
+        >
+          Deconnexion PC
+        </button>
+        <button type="button" onclick="driveList()" title="Liste des lecteurs">
+          drive list
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // INITIALIZ
+      const desk = Deskframe();
+
+      // RENDRE UN Element CAPABLE DE DEPLACE LA FENETRE
+      desk.frame.Mover("move");
+
+      function runCmd() {
+        const response = desk.system.Run("dir");
+        alert(response);
+      }
+      function driveList() {
+        const response = desk.drive.List();
+        alert("Votre systeme pocede les lecteurs : " + response);
+      }
+    </script>
+  </body>
+</html>

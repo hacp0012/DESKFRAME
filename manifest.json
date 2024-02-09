@@ -1,0 +1,42 @@
+{
+  "frame": {
+    "srcUrl": "",
+    "port": 0,
+    "srcFile": "index.html",
+    "wHeight": 487,
+    "wWidth": 736,
+    "titleBar": 1,
+    "forceLightTitlebar": 1
+  },
+  "app": {
+    "name": "Desk Frame App",
+    "package_name": "My_Deskframe_Apps",
+    "description": "Yaur small DeskFrame app description",
+    "version": "1.0",
+    "icon": "icon.png",
+    "siteweb": "monsiteweb.com"
+  },
+
+  "install_dir": "C:\\Program Files\\DESKFRAME",
+
+  "compilator": {
+    "ignore": [
+      "Compiler",
+      "Web_src",
+      "compil2Exe.ahk",
+      "readme.txt",
+      "Release",
+      "BUILDS",
+      "Doc"
+    ],
+    "required": [
+      "icon.ico",
+      "manifest.json",
+      "install.ahk",
+      "uninstall.ahk",
+      "app.ahk",
+      "Compiler",
+      "www"
+    ]
+  }
+}

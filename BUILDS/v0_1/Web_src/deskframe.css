@@ -1,0 +1,32 @@
+/* MAKE DRAGABLE A REGION * THIS DRAG (move) A WOLL WINDOW */
+.df-titlebar-dragable {
+  -webkit-app-region: drag;
+}
+
+/* DISABLE TEXT SELECTION */
+.df-disable-text-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* TITLE BAR BTN STYLE ICON */
+.df-titlebar-btn {
+  -webkit-app-region: no-drag;
+  padding: 0.35em 1em;
+  cursor: pointer;
+  vertical-align: bottom;
+  font-family: Webdings;
+  font-size: 11pt;
+}
+
+.df-titlebar-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.df-titlebar-btn-close:hover {
+  background: #dc3545;
+}
